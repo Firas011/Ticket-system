@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_signin_button/flutter_signin_button.dart';
 
 class welcome extends StatefulWidget {
   @override
@@ -88,6 +89,20 @@ class _welcomeState extends State<welcome> {
                     color: Colors.yellow,
                   ),
                 ],
+              ),
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: SignInButton(
+                  Buttons.Google,
+                  onPressed: () {},
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(5.0),
+                child: SignInButton(
+                  Buttons.Facebook,
+                  onPressed: () {},
+                ),
               ),
             ],
           ),
