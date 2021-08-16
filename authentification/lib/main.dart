@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:authentification/welcome.dart';
 import 'package:flutter/material.dart';
 import 'welcome.dart';
@@ -13,6 +11,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.green,
       ),
+      debugShowCheckedModeBanner: false,
       home: welcome(),
       // testing
     );
